@@ -17,11 +17,11 @@
 
 # Ques3- Now the ques is take the user input and count only positive numers 
 
-number = list(map(int,input("enter your numbers here:- ").split()))
-count = 0
+# number = list(map(int,input("enter your numbers here:- ").split()))
+# count = 0
 
-for i in number:
-    if i > 0:
-        count +=1
+# for i in number:
+#     if i > 0:
+#         count +=1
 
-print("positive numbers count:-",count)
+# print("positive numbers count:-",count)
