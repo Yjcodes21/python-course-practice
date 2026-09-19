@@ -25,3 +25,8 @@
 #         count +=1
 
 # print("positive numbers count:-",count)
+
+a = int(input("enter a no"))
+
+for i in range(1,11):
+    print(a*i)
