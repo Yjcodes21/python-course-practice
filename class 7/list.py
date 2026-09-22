@@ -40,16 +40,61 @@
 
 #print the 2nd greatest no in the list
 
-a = [10 , 20 , 50 , 20 , 5]
-max = a[0]
-max2 = a[0]
-index = 0
-index2 = 0
+# a = [10 , 20 , 50 , 20 ,93,91 , 5]
+# max = a[0]
+# max2 = a[0]
+# index = 0
+# index2 = 0
 
-for i in range(len(a)):
-    if max < a[i]:
-        max2 = max
-        max = a[i]
-        index2 = index
-        index = i
-print(f"the second greatest no is {max2} at the index of {index2}")
+# for i in range(len(a)):
+#     if max < a[i]:
+#         max2 = max
+#         max = a[i]
+#         index2 = index
+#         index = i
+#     elif max2 < a[i] and a[i] != max:
+#         max2 = a[i]
+#         index2 = i
+# print(f"the second greatest no is {max2} at the index of {index2}")
+# here is the question of sorting to check the sorting , is the list sorted or not
+# a = [10,20,30,40]
+# for i in range(len(a)-1):
+#     if a[i]< a[i+1]:
+#         continue
+#     else :
+#         print("not sorted")
+#         break
+# else:
+#     print(" sorted")
+
+# here we go for the swaping left to right and right to left
+
+# a= [10,20,23,32,12,32]
+# b= [10,20,23,32,12,32]
+
+# for i in range(len(a)-1):
+#     a[i],a[i+1]=a[i+1],a[i]
+# print (f"here is left to right swaping {a}")
+
+# for i in range(len(b)-1,0,-1):
+#     b[i],b[i-1]=b[i-1],b[i]
+   
+# print (f"here is  right to left  swaping {b}")
+
+# if the ques says  n times u wanna roatate the list then 
+
+# a= [10,20,30,40,50]
+# n= int(input("enter the no for the times u wanna list rotate left:-"))
+
+# for i in range(n):
+#     for i in range(len(a)-1):
+#         a[i],a[i+1]= a[i+1],a[i]
+# print(a)
+#reverse the list question
+a = [10,20,30,40,50,50]
+b = len(a)-1
+
+for i in range(len(a)//2):
+    a[i],a[b]=a[b],a[i]
+    b = b-1
+print(a)
