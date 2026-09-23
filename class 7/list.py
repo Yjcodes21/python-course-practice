@@ -91,10 +91,41 @@
 #         a[i],a[i+1]= a[i+1],a[i]
 # print(a)
 #reverse the list question
-a = [10,20,30,40,50,50]
-b = len(a)-1
+# a = [10,20,30,40,50,50]
+# b = len(a)-1
 
-for i in range(len(a)//2):
-    a[i],a[b]=a[b],a[i]
-    b = b-1
+# for i in range(len(a)//2):
+#     a[i],a[b]=a[b],a[i]
+#     b = b-1
+# print(a)
+
+# a = [10, 20, 30, 40, 50]
+
+# search = 40
+
+# start = 0
+# last = len(a) - 1
+
+# while start <= last:
+
+#     mid = (start + last) // 2
+
+#     if a[mid] == search:
+#         print(f"The search is completed. {search} is at index {mid}")
+#         break
+
+#     elif a[mid] < search:
+#         start = mid + 1
+
+#     elif a[mid] > search:
+#         last = mid - 1
+
+# else:
+#     print("The number isn't in the array")
+
+a= [10,90,900,49,1,9,2,9999,384]
+for j in range(len(a)-1):
+    for i in range (len(a)-1-j):
+        if a[i] > a[i+1]:
+            a[i],a[i+1] = a[i+1],a[i]
 print(a)
