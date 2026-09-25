@@ -123,9 +123,27 @@
 # else:
 #     print("The number isn't in the array")
 
-a= [10,90,900,49,1,9,2,9999,384]
-for j in range(len(a)-1):
-    for i in range (len(a)-1-j):
-        if a[i] > a[i+1]:
-            a[i],a[i+1] = a[i+1],a[i]
-print(a)
+# a= [10,90,900,49,1,9,2,9999,384]
+# for j in range(len(a)-1):
+#     for i in range (len(a)-1-j):
+#         if a[i] > a[i+1]:
+#             a[i],a[i+1] = a[i+1],a[i]
+# print(a)
+
+#sorting
+# a = [10,50,20,30,1,5]
+# for i in range(len(a)-1):
+#     k= i+1
+#     min = i
+#     for j in range(k,len(a)):
+#         if a[j]<a[min]:
+#             min=j
+#     a[i],a[min]=a[min],a[i]
+# print(a)
+
+a= [10,20,30,40]
+for i in range(len(a)):
+
+    if i%2 != 0:
+        a[i]=0
+print(a)  
